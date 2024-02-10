@@ -68,7 +68,7 @@ setTimeout(() => {
 
 <style scoped>
 
-.main{
+/* .main{
   color: #918484;
   position:absolute;
   top:0;
@@ -194,7 +194,7 @@ setTimeout(() => {
 }
 .item-c > div{
   text-align: center;
-}
+} */
 
 
 </style>
