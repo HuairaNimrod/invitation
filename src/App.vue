@@ -24,18 +24,40 @@ setTimeout(() => {
     <img v-show="isVisible" ref="baby" alt="Vue logo" class="pulse" src="./assets/image.png" width="125" height="125" />
   </div>
 
-  <div v-show="isNotVisible" class="texty">
-    <img  class="ballon-2" ref="baby" alt="girl ballon" src="./assets/girl_ballon.png" />
-    <img  class="ballon-1" ref="baby" alt="girl ballon" src="./assets/boy_ballon.png" />
-    <div class="text-invitation">
-      <p class="texty-in">Join us</p>
-      <p class="texty-in">for a gender reveal</p>
-      <p class="texty-in">celebrating</p>
-      <p class="texty-in special-font text-margin">Nim & Keyla</p>
-      <p class="texty-in text-margin" >Saturday, February 17</p>
-      <p class="texty-in">at 5:00 pm</p>
-      <p class="texty-in text-margin">Club House Liberty Square</p>
-      <p class="texty-in">556 N. 400 E. Provo, UT 84604</p>
+  <div v-show="isNotVisible" class="texty grid-container">
+
+    <div class="item-a">
+      
+        <img  class="ballon-1" ref="baby" alt="boy ballon" src="./assets/boy_ballon.png" />
+        <img  class="ballon-2" ref="baby" alt="girl ballon" src="./assets/girl_ballon.png" />
+      
+    </div>
+
+    <div class="item-b">
+      <div class="text-invitation ">
+        <p class="texty-in">Un pequeño bebé esta en camino</p>
+        <p class="texty-in">Acompañanos en la revelacion</p>
+        <p class="texty-in"> de género de nuestro bebé</p>
+        <p class="texty-in special-font text-margin">Nim & Keyla</p>
+        <p class="texty-in text-margin" >Sábado 17 de Febrero</p>
+        <p class="texty-in">de 5:00 a 7:00 pm</p>
+        <p class="texty-in text-margin">Club House Liberty Square</p>
+        <p class="texty-in">556 N. 400 E. Provo, UT 84606</p>
+      </div>  
+    </div>
+
+    <div class="item-c">
+      <div>
+        <h3>Team niña</h3>
+        <img  ref="baby" alt="girl ballon" src="./assets/diapers.png" />
+        <p>pañales</p>
+      </div>
+      <div>
+        <h3>Team niño</h3>
+        <img  ref="baby" alt="girl ballon" src="./assets/wipes.png" />
+        <p>pañitos humedos</p>
+      </div>
+      
     </div>
 </div>
   
@@ -47,8 +69,60 @@ setTimeout(() => {
 
 <style scoped>
 
+/* grid */
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.item-a{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 4;
+}
+.item-b{
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 4;
+  text-align: right;
+}
+.item-c{
+  padding-top: 30px;
+  grid-column: 1 / span 3;
+  grid-row: 5 / span 1;
+}
+
+/* bottom info */
+.item-c{
+  display: flex;
+  align-items: baseline ;
+  justify-content: space-evenly;
+}
+.item-c > div > h3{
+  font-size: 15px;
+}
+.item-c > div > p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  letter-spacing: -1px;
+}
+.item-c > div > img{
+  height: 40px;
+  margin: 8px 0px 4px 0px;
+}
+.item-c > div{
+  text-align: center;
+}
+/* bottom info end */
 
 .main{
+  color: #918484;
   position:absolute;
   top:0;
   left:0;
@@ -65,7 +139,6 @@ setTimeout(() => {
 }
 
 .texty{
-  text-align: right;
   animation: opa 10s linear ;
 }
 
@@ -93,23 +166,23 @@ setTimeout(() => {
 }
 
 .ballon-1{
-position: fixed;
-left: 21px;
-top: 345px;
-width:120px ;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width:120px ;
 }
 .ballon-2{
-position: fixed;
-left: 87px;
-top: 240px;
-width:120px ;
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  width:120px ;
+  z-index: -1;
 }
 
 .text-invitation{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-15%, -45%);
+  right: 0px;
+  top: 30%;
 }
 
 .text-margin{
