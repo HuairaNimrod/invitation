@@ -56,8 +56,7 @@ setTimeout(() => {
         <h3>Team niño</h3>
         <img  ref="baby" alt="girl ballon" src="./assets/wipes.png" />
         <p>pañitos humedos</p>
-      </div>
-      
+      </div>  
     </div>
   </div>
   
@@ -146,7 +145,7 @@ setTimeout(() => {
   }
 }
 
-/* grid */
+
 .grid-container{
   animation: opa 10s linear ;
   display: grid;
@@ -176,7 +175,7 @@ setTimeout(() => {
   grid-row: 5 / span 1;
 }
 
-/* bottom info */
+
 .item-c{
   display: flex;
   align-items: baseline ;
@@ -197,7 +196,6 @@ setTimeout(() => {
 .item-c > div{
   text-align: center;
 }
-/* bottom info end */
 
 
 </style>
