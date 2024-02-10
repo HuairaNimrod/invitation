@@ -24,7 +24,7 @@ setTimeout(() => {
     <img v-show="isVisible" ref="baby" alt="Vue logo" class="pulse" src="./assets/image.png" width="125" height="125" />
   </div>
 
-  <div v-show="isNotVisible" class="texty grid-container">
+  <div v-show="isNotVisible" class="grid-container">
 
     <div class="item-a">
       
@@ -59,7 +59,7 @@ setTimeout(() => {
       </div>
       
     </div>
-</div>
+  </div>
   
 </div>
   
@@ -68,58 +68,6 @@ setTimeout(() => {
 </template>
 
 <style scoped>
-
-/* grid */
-.grid-container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-
-  width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.item-a{
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 4;
-}
-.item-b{
-  grid-column: 2 / span 2;
-  grid-row: 1 / span 4;
-  text-align: right;
-}
-.item-c{
-  padding-top: 30px;
-  grid-column: 1 / span 3;
-  grid-row: 5 / span 1;
-}
-
-/* bottom info */
-.item-c{
-  display: flex;
-  align-items: baseline ;
-  justify-content: space-evenly;
-}
-.item-c > div > h3{
-  font-size: 15px;
-}
-.item-c > div > p {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 15px;
-  letter-spacing: -1px;
-}
-.item-c > div > img{
-  height: 40px;
-  margin: 8px 0px 4px 0px;
-}
-.item-c > div{
-  text-align: center;
-}
-/* bottom info end */
 
 .main{
   color: #918484;
@@ -136,10 +84,6 @@ setTimeout(() => {
 @keyframes back {
   from{background-color: #918484;}
   to {background-color: white;}
-}
-
-.texty{
-  animation: opa 10s linear ;
 }
 
 @keyframes opa {
@@ -195,12 +139,65 @@ setTimeout(() => {
   letter-spacing: -2px;
 }
 @media (min-width: 1024px) {
-  
-
   header .wrapper {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
   }
 }
+
+/* grid */
+.grid-container{
+  animation: opa 10s linear ;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.item-a{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 4;
+}
+.item-b{
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 4;
+  text-align: right;
+}
+.item-c{
+  padding-top: 30px;
+  grid-column: 1 / span 3;
+  grid-row: 5 / span 1;
+}
+
+/* bottom info */
+.item-c{
+  display: flex;
+  align-items: baseline ;
+  justify-content: space-evenly;
+}
+.item-c > div > h3{
+  font-size: 15px;
+}
+.item-c > div > p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  letter-spacing: -1px;
+}
+.item-c > div > img{
+  height: 40px;
+  margin: 8px 0px 4px 0px;
+}
+.item-c > div{
+  text-align: center;
+}
+/* bottom info end */
+
+
 </style>
