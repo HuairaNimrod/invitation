@@ -46,7 +46,7 @@ setTimeout(() => {
       </div>  
     </div>
 
-    <div class="item-c">
+    <!-- <div class="item-c">
       <div>
         <h3>Team niña</h3>
         <img alt="girl ballon" src="./assets/diapers.png" />
@@ -57,7 +57,7 @@ setTimeout(() => {
         <img alt="girl ballon" src="./assets/wipes.png" />
         <p>pañitos humedos</p>
       </div>  
-    </div>
+    </div> -->
   </div>
   
 </div>
@@ -68,7 +68,7 @@ setTimeout(() => {
 
 <style scoped>
 
-/* .main{
+.main{
   color: #918484;
   position:absolute;
   top:0;
@@ -194,7 +194,7 @@ setTimeout(() => {
 }
 .item-c > div{
   text-align: center;
-} */
+}
 
 
 </style>
