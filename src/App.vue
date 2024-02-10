@@ -49,12 +49,12 @@ setTimeout(() => {
     <div class="item-c">
       <div>
         <h3>Team niña</h3>
-        <img alt="diaper" src="@/assets/diapers.png" />
+        <img alt="diaper" src="./assets/diapers.png" />
         <p>pañales</p>
       </div>
       <div>
         <h3>Team niño</h3>
-        <img alt="wipes" src="@/assets/wipes.png" />
+        <img alt="wipes" src="./assets/wipes.png" />
         <p>pañitos humedos</p>
       </div>  
     </div>
