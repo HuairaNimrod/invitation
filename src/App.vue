@@ -46,7 +46,7 @@ setTimeout(() => {
       </div>  
     </div>
 
-    <!-- <div class="item-c">
+    <div class="item-c">
       <div>
         <h3>Team niña</h3>
         <img alt="girl ballon" src="./assets/diapers.png" />
@@ -57,7 +57,7 @@ setTimeout(() => {
         <img alt="girl ballon" src="./assets/wipes.png" />
         <p>pañitos humedos</p>
       </div>  
-    </div> -->
+    </div>
   </div>
   
 </div>
@@ -85,10 +85,7 @@ setTimeout(() => {
   to {background-color: white;}
 }
 
-@keyframes opa {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+
 
 .texty-in{
   color: #918484;
@@ -146,55 +143,6 @@ setTimeout(() => {
 }
 
 
-.grid-container{
-  animation: opa 10s linear ;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.item-a{
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 4;
-}
-.item-b{
-  grid-column: 2 / span 2;
-  grid-row: 1 / span 4;
-  text-align: right;
-}
-.item-c{
-  padding-top: 30px;
-  grid-column: 1 / span 3;
-  grid-row: 5 / span 1;
-}
-
-
-.item-c{
-  display: flex;
-  align-items: baseline ;
-  justify-content: space-evenly;
-}
-/* .item-c > div > h3{
-  font-size: 15px;
-}
-.item-c > div > p {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 15px;
-  letter-spacing: -1px;
-}
-.item-c > div > img{
-  height: 40px;
-  margin: 8px 0px 4px 0px;
-}
-.item-c > div{
-  text-align: center;
-} */
 
 
 </style>
