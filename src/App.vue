@@ -180,7 +180,7 @@ setTimeout(() => {
   align-items: baseline ;
   justify-content: space-evenly;
 }
-.item-c > div > h3{
+/* .item-c > div > h3{
   font-size: 15px;
 }
 .item-c > div > p {
@@ -194,7 +194,7 @@ setTimeout(() => {
 }
 .item-c > div{
   text-align: center;
-}
+} */
 
 
 </style>
