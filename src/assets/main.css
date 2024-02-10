@@ -62,7 +62,7 @@ a,
   text-align: right;
 }
 .item-c{
-  padding-top: 30px;
+  padding-top: 10px;
   grid-column: 1 / span 3;
   grid-row: 5 / span 1;
 }
