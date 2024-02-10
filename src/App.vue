@@ -21,15 +21,15 @@ setTimeout(() => {
 <div class="main">
 
   <div class="image_container">
-    <img v-show="isVisible" ref="baby" alt="Vue logo" class="pulse" src="./assets/image.png" width="125" height="125" />
+    <img v-show="isVisible" alt="Vue logo" class="pulse" src="./assets/image.png" width="125" height="125" />
   </div>
 
   <div v-show="isNotVisible" class="grid-container">
 
     <div class="item-a">
       
-        <img  class="ballon-1" ref="baby" alt="boy ballon" src="./assets/boy_ballon.png" />
-        <img  class="ballon-2" ref="baby" alt="girl ballon" src="./assets/girl_ballon.png" />
+        <img  class="ballon-1"  alt="boy ballon" src="./assets/boy_ballon.png" />
+        <img  class="ballon-2"  alt="girl ballon" src="./assets/girl_ballon.png" />
       
     </div>
 
@@ -49,12 +49,12 @@ setTimeout(() => {
     <div class="item-c">
       <div>
         <h3>Team niña</h3>
-        <img  ref="baby" alt="girl ballon" src="./assets/diapers.png" />
+        <img alt="girl ballon" src="./assets/diapers.png" />
         <p>pañales</p>
       </div>
       <div>
         <h3>Team niño</h3>
-        <img  ref="baby" alt="girl ballon" src="./assets/wipes.png" />
+        <img alt="girl ballon" src="./assets/wipes.png" />
         <p>pañitos humedos</p>
       </div>  
     </div>
@@ -153,7 +153,6 @@ setTimeout(() => {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-
   width: 90%;
   position: absolute;
   top: 50%;
